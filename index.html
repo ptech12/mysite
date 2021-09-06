@@ -34,9 +34,17 @@
 #contact{
     height: 100vh;
 }
+nav{
+    position: fixed;
+    
+}
 .back-top{
-    position: sticky;
     float: right;
+    position: fixed;
+    text-decoration: none;
+    border-radius: 50px;
+    border-width: 9px;
+    background-color: transparent;
 }
 </style>
 </head>
@@ -45,6 +53,9 @@
     <!-- back to top button -->
     <section class="prasanth">
     <!-- div section home -->
+    <button onclick="window.scrollTo({top:0, behavior:'smooth'});"
+     class='back-top'> TOP </button>
+
     <section>
         <!-- NAV BAR -->
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -106,7 +117,6 @@
     <section id="contact">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aliquid dignissimos provident eaque! Accusantium nihil quisquam laudantium voluptatum delectus eaque recusandae ipsa esse nulla sapiente molestias totam atque, fugit amet.</p>
     </section>
-    <button class='back-top'> <a href="#">TOP</a> </button>
 </section>
 
 
